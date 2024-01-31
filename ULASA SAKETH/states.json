@@ -1,0 +1,32 @@
+{
+    "states" : [
+        {
+            "name" : "Alabama" ,
+            "abbreviation":"al",
+            "area codes":["205","206"]
+            
+        },
+
+        {
+            "name" : "austria" ,
+            "abbreviation":"au",
+            "area codes":["125"]
+
+        },
+
+        {
+            "name" : "japan" ,
+            "abbreviation":"jn",
+            "area codes":["225"]
+        },
+
+        {
+            "name" : "india" ,
+            "abbreviation":"in",
+            "area codes":["205","206","111"]
+        }
+
+
+
+    ]
+}

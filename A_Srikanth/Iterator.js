@@ -1,0 +1,10 @@
+var arr=[1,2,3,9,5,4,7];
+const i=arr[Symbol.iterator]();
+console.log(i.next());
+console.log(i.next());
+console.log(i.next());
+console.log(i.next());
+console.log(i.next());
+console.log(i.next());
+console.log(i.next());
+console.log(i.next());
