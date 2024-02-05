@@ -470,6 +470,256 @@
 // check(4, 6);
 
 
+// reverece of string :
+
+// var str='hi this is srikanth';
+// console.log(str.split('').reverse().join(''));
+// let leftpro=1;
+// for(let i=0;i<3;i++){
+
+//     leftpro+=i;
+
+//     console.log(leftpro)
+
+// }
+// console.log(leftpro);
 
 
 
+// var firstWord = "Mary";
+// var secondWord = "Army"; 
+// isAngular(firstWord, secondWord); 
+// function isAngular(first, second) { 
+// var a = first.tolowerCase();
+// var b = second.tolowerCase (); 
+// a = a.split("").sort ().join("") ;
+// b = b.split("").sort ().join("") ;
+// return a===b;
+// }
+
+
+// function longestSubstring(s) {
+//     let start = 0;
+//     let maxSubstring = '';
+//     let charIndex = {};
+
+//     for (let i = 0; i < s.length; i++) {
+//         const char = s[i];
+//         start = charIndex[char] !== undefined && charIndex[char] >= start ? charIndex[char] + 1 : start;
+//         charIndex[char] = i;
+
+//         const currentSubstring = s.substring(start, i + 1);
+//         if (currentSubstring.length > maxSubstring.length) {
+//             maxSubstring = currentSubstring;
+//         }
+//     }
+
+//     return maxSubstring;
+// }
+
+// const inputString = "abcabcbb";
+// const result = longestSubstring(inputString);
+// console.log(result);  
+
+
+// function longestSubstringWithoutRepeatingChars(s) {
+//     let longestSubstring = '';
+//     let currentSubstring = '';
+
+//     for (let i = 0; i < s.length; i++) {
+//         const currentChar = s[i];
+//         const charIndex = currentSubstring.indexOf(currentChar);
+
+//         if (charIndex === -1) {
+//             // If the character is not in the current substring, add it
+//             currentSubstring += currentChar;
+//         } else {
+//             // If the character is in the current substring, update the substring
+//             // by removing the characters before the repeated one
+//             currentSubstring = currentSubstring.slice(charIndex + 1) + currentChar;
+//         }
+
+//         // Update the longest substring if the current one is longer
+//         if (currentSubstring.length > longestSubstring.length) {
+//             longestSubstring = currentSubstring;
+//         }
+//     }
+
+//     return longestSubstring;
+// }
+
+// // Example usage:
+// const inputString = "abc srikanth abc srikanth";
+// const result = longestSubstringWithoutRepeatingChars(inputString);
+// console.log(result); // Output: "abc"
+
+
+// function countPositivesAndSumNegatives(numbers) {
+//     let positivesum = 0;
+//     let negativeSum = 0;
+
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] > 0) {
+//             // Count positive numbers
+//             positivesum +=numbers[i];
+//         } else {
+//             // Sum negative numbers
+//             negativeSum += numbers[i];
+//         }
+//     }
+
+//     return [positivesum, negativeSum];
+// }
+
+// // Example usage:
+// const numbersArray = [3, -5, 7, 2, -8, 4, -1];
+// const result = countPositivesAndSumNegatives(numbersArray);
+// console.log(result); // Output: [4, -14]
+
+
+
+
+// function canBeConsecutive(arr) {
+//     if (!Array.isArray(arr)) {
+//         return false;
+//     }
+
+//     arr.sort((a, b) => a - b);
+
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] !== arr[i - 1] + 1) {
+//             return false;
+        
+//         }
+//     }
+
+//     return true;
+// }
+
+// const array1 = [46, 2, 365, 1, 5];
+// const array2 = [1, 2, 3, 4, 5];
+
+
+
+// console.log(canBeConsecutive(array1)); 
+// console.log(canBeConsecutive(array2)); 
+
+// console.log(array1);
+// console.log(array2);
+
+
+
+
+
+    
+// function fun(xyz){
+//     try{
+//     if(!Array.isArray(xyz)){
+//         throw new Error('this is not an array');
+//     }
+    
+    
+//     xyz.sort((a,b) => a - b)
+
+//     for(let i=1;i<xyz.length;i++){
+//         if(xyz[i] !== xyz[i-1] + 1){
+//             return false;
+//         }
+//     }
+//     return true;
+//      }
+// }
+// catch(error){
+// let array1=[29,7,8,5,6];
+// // let array2=[1,2,3,4,5];
+
+// console.log(fun(array1));
+// // console.log(fun(array2));
+
+// console.log(array1);
+// // console.log(array2);
+// }
+
+
+
+
+
+
+
+// function fun(xyz) {
+//     try {
+//         if (!Array.isArray(xyz)) {
+//             throw new Error('This is not an array');
+//         }
+
+//         xyz.sort((a, b) => a - b);
+
+//         for (let i = 1; i < xyz.length; i++) {
+//             if (xyz[i] !== xyz[i - 1] + 1) {
+//                 return false;
+//             }
+//         }
+//         return true;
+//     } catch (error) {
+//         console.error(error.message);
+//     }
+// }
+
+// let array1 = [29, 7, 8, 5, 6];
+// let array2 = [1, 2, 3, 4, 5];
+
+// console.log(fun(array1));
+// console.log(fun(array2));
+
+// console.log(array1);
+// console.log(array2);
+
+// const i=[51,15,22,11,31,3]
+// console.log(i.sort((a,b) => a-b));
+
+
+// const i=[5,20,16,2,15]
+// console.log(i.pop());
+// console.log(i);
+
+// function findSecondLargestNumber(str) {
+//   const numbers = str.match(/\d+/g); // Extract numbers from the string
+
+//   if (!numbers || numbers.length < 2) {
+//     return 'No second largest number found';
+//   }
+
+//   const sortedNumbers = numbers.map(Number).sort((a, b) => b - a);
+
+//   return sortedNumbers[1];
+// }
+
+// // Example usage
+// const inputString = 'The numbers are 42, 15, 73, and 28';
+// const result = findSecondLargestNumber(inputString);
+// console.log(`Second largest number: ${result}`);
+
+
+
+
+// /\d+/g:
+
+// \d: This is a regular expression pattern that matches any digit (0-9).
+// +: This quantifier means "one or more occurrences."
+// /g: This flag stands for "global" and indicates that the matching should be performed globally throughout the entire string, rather than stopping after the first match.
+
+
+// find second largest Number
+
+// function y(str){
+//     const numbers=str.match(/\d+/g);
+//     const unique=[...new Set(numbers)];
+//     if(!unique || unique.length < 2){
+//         return `no sencond heighest no found`
+//     }
+//     const sortNums=unique.sort((a,b) => b-a);
+//     return sortNums[1];
+// }
+// const input='these numbers are 342,343,67 and 343';
+// const result=y(input);
+// console.log(`second largest no is : `+result);
