@@ -147,7 +147,6 @@
 
 // Creating a Promise
 // const myPromise = new Promise((resolve, reject) => {
-//     // Simulating an asynchronous operation (e.g., fetching data)
 //     setTimeout(() => {
 //       const success = true;
   
@@ -159,7 +158,6 @@
 //     }, 2000); // Simulating a delay of 2 seconds
 //   });
   
-//   // Using the Promise
 //   myPromise
 //     .then((result) => {
 //       console.log("Success:", result);
@@ -175,10 +173,8 @@
 
 
 
-// Simulating an asynchronous function to fetch data from an API
 const fetchData = () => {
     return new Promise((resolve, reject) => {
-      // Simulating an API request with a delay
       setTimeout(() => {
         const success = true;
   
@@ -188,11 +184,10 @@ const fetchData = () => {
         } else {
           reject("Failed to fetch data from the API");
         }
-      }, 2000); // Simulating a delay of 2 seconds
+      }, 2000); 
     });
   };
   
-  // Using the fetchData function with a Promise
   fetchData()
     .then((result) => {
       console.log("Data fetched successfully:", result);
