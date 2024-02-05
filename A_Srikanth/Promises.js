@@ -86,19 +86,121 @@
 
 
 
-  function getUsers() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            const users = [
-                { username: 'john', email: 'john@test.com' },
-                { username: 'jane', email: 'jane@test.com' },
-            ];
-            resolve(users);
-        }, 1000);
-    });
-}
+//   function getUsers() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             const users = [
+//                 { username: 'john', email: 'john@test.com' },
+//                 { username: 'jane', email: 'jane@test.com' },
+//             ];
+//             resolve(users);
+//         }, 1000);
+//     });
+// }
 
-// Usage
-getUsers().then((users) => {
-    console.log(users);
-});
+// // Usage
+// getUsers().then((users) => {
+//     console.log(users);
+// });
+
+
+//CLASS
+
+// class Student{
+//     setDetails(sid,name,grade){
+//         this.sid=sid;
+//         this.name=name;
+//         this.grade=grade;
+//     }
+//     display(){
+//         console.log(this.sid,this.name,this.grade);
+//     }
+// }
+// let stu=new Student();
+// stu.setDetails(101,'raj','a')
+// stu.display()
+
+
+// let user = {    
+//     name: "John", 
+//     age: 30        
+//   };
+//   console.log(user.name);
+//   console.log(user.age);
+
+// Creating a simple object
+// let person = {
+//     name: 'Riyansh',
+//     age: 25,
+//     isStudent: true,
+//     introduce: function() {
+//       console.log(`Hi, I'm ${this.name}, and I'm ${this.age} years old.`);
+//     }
+//   };
+//   console.log(person.name);  
+//   console.log(person.isStudent); 
+//   person.introduce(); 
+  
+
+
+
+
+// Creating a Promise
+// const myPromise = new Promise((resolve, reject) => {
+//     // Simulating an asynchronous operation (e.g., fetching data)
+//     setTimeout(() => {
+//       const success = true;
+  
+//       if (success) {
+//         resolve("Operation completed successfully!");
+//       } else {
+//         reject("Operation failed!");
+//       }
+//     }, 2000); // Simulating a delay of 2 seconds
+//   });
+  
+//   // Using the Promise
+//   myPromise
+//     .then((result) => {
+//       console.log("Success:", result);
+//     })
+//     .catch((error) => {
+//       console.error("Error:", error);
+//     })
+//     .finally(() => {
+//       console.log("Finally block - This will be executed regardless of success or failure.");
+//     });
+  
+
+
+
+
+// Simulating an asynchronous function to fetch data from an API
+const fetchData = () => {
+    return new Promise((resolve, reject) => {
+      // Simulating an API request with a delay
+      setTimeout(() => {
+        const success = true;
+  
+        if (success) {
+          const data = { id: 1, name: "John Doe", age: 25 };
+          resolve(data);
+        } else {
+          reject("Failed to fetch data from the API");
+        }
+      }, 2000); // Simulating a delay of 2 seconds
+    });
+  };
+  
+  // Using the fetchData function with a Promise
+  fetchData()
+    .then((result) => {
+      console.log("Data fetched successfully:", result);
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    })
+    .finally(() => {
+      console.log("Fetching data operation completed.");
+    });
+  
