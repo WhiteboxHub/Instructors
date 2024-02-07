@@ -65,3 +65,47 @@ def My_dic():
  print(My_car["model"])
 
 My_dic()
+
+
+#IF - else using Functions
+
+def Con(H,I): #used two parameters
+
+ if H > I : 
+  print(f"{H} is greater than  {I}"  )   #used String formatter to print the value of Input given 
+ elif H < I:
+  print(f"{H} is lesser than {I}",)
+ else: print(f"{H} is Equal to {I}",)  
+
+Con(50,50)  # arguments for Functions
+
+#nested If else to check if the given value is greater than 10 
+
+def nes(Y):
+ if Y>10: 
+    print(f"{Y} is greater than 10") 
+    if Y>20: 
+      print(f"{Y} is greater than 20")
+    elif Y == 20:                              #using else -if
+        print(f"{Y} is equal to 20")
+ else:print(f"{Y} is lesser than 10")
+
+nes(20)
+
+
+#loops  (While and for)
+
+def Wloo():
+  i=1
+  while i<20 :                 #using while loop
+    print(i)
+    i=i+1                      #increment operator
+Wloo()  
+
+
+def Floo():                               
+  cars=["vento","virtus","slavia","octavia"]      
+  for x in cars:                                   #using for loop
+   print(x)
+
+Floo()  
