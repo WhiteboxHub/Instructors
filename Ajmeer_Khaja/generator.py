@@ -11,5 +11,14 @@ for i in value:
 
 
 def newgen():
-    strlen = 10;
-    
+    engletters ="abcdefghijklmnopqrstuvwxyz"
+    i=0
+    while i< len(engletters):
+        yield engletters[i]
+        i+=1
+
+neval = newgen()
+
+for i in neval:
+    print(i)
+        
