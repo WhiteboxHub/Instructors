@@ -1,0 +1,20 @@
+{
+  "states": [
+    {
+      "name": "Alabama",
+      "abbreviation": "al"
+    },
+    {
+      "name": "austria",
+      "abbreviation": "au"
+    },
+    {
+      "name": "japan",
+      "abbreviation": "jn"
+    },
+    {
+      "name": "india",
+      "abbreviation": "in"
+    }
+  ]
+}
